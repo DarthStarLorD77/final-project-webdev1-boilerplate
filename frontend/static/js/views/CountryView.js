@@ -55,6 +55,14 @@ export default class extends AbstractView {
     };
     console.log(resultInfo);
 
+    let borders;
+    let checking = "";
+    for (let i = 0; i < resultInfo.borders.length; i++) {
+      borders = i; 
+      <a href="${resultInfo.borders[i]}">${resultInfo.borders[i]}</a>
+      console.log(resultInfo.borders[i]);
+    }
+
     return `
                 
               <div class="CountryView">
@@ -90,13 +98,15 @@ export default class extends AbstractView {
                       <p><strong>Languages:</strong>${resultInfo.languages}</p>
                     </div>
                     <div class="borders">
-                    <p><strong>Border Countries:</strong>${resultInfo.borders}</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            
-        `;
-  }
-}
-
+                    <p><strong>Border Countries:</strong><a href="/countries/${resultInfo.borders}">${resultInfo.borders}</a></p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    `;
+                  }
+                  
+                }
+                
+              

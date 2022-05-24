@@ -44,7 +44,7 @@ $baseBoxShadowDarkMode: 0 2px 9px 3px #333;
 
 @media only screen and (max-width: 180px){
 
-    .country-info {
+    .CountryView {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     }

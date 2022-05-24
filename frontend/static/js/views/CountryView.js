@@ -54,15 +54,6 @@ export default class extends AbstractView {
       flags: countryInfo.flags.png,
     };
     console.log(resultInfo);
-
-    let borders;
-    let checking = "";
-    for (let i = 0; i < resultInfo.borders.length; i++) {
-      borders = i; 
-      <a href="${resultInfo.borders[i]}">${resultInfo.borders[i]}</a>
-      console.log(resultInfo.borders[i]);
-    }
-
     return `
                 
               <div class="CountryView">
